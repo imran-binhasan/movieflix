@@ -33,13 +33,16 @@ export default function TabsLayout() {
                 alignItems: 'center',
             },
             tabBarStyle: {
-                backgroundColor: '#0f0D23',
+                backgroundColor: '#0F0D23',
                 borderRadius:40,
                 marginHorizontal: 20,
                 marginBottom: 20,
-                height: 54
+                height: 54,
+                position: 'absolute',
+                overflow: 'hidden',
+                borderWidth: 1,
+                borderColor: '#0F0D23',
             }
-            
             }}>
             <Tabs.Screen name="index" options={{
                 title: "Home", headerShown: false,

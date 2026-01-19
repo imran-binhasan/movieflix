@@ -16,7 +16,7 @@ const index = () => {
     <View className='flex-1 bg-primary'>
       <Image source={images.bg} className='w-full z-0 absolute' />
       <ScrollView className='flex-1 px-4' showsVerticalScrollIndicator={false} contentContainerStyle={{ minHeight: '100%', paddingBottom: 10 }}>
-        <Image source={icons.logo} className='w-12 h-12 mx-auto mt-20 mb-5' />
+        <Image source={icons.logo} className='w-12 h-10 mx-auto mt-20 mb-5' />
 
 
         {moviesLoading ? (<ActivityIndicator size="large" color="#0000ff" className='mt-10 self-center' />)
