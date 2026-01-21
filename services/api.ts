@@ -1,3 +1,5 @@
+import { MovieDetails } from "@/interfaces/interfaces";
+
 export const TMDB_CONFIG = {
     BASE_URL: 'https://api.themoviedb.org/3',
     APIKEY: process.env.EXPO_PUBLIC_TMDB_API_KEY,
@@ -28,7 +30,7 @@ export const getMovieLists = async ({ query }: { query: string }) => {
     return data.results;
 }
 
-export const getMovieDetail = async (id: string) => {
+export const getMovieDetail = async (id: string): Promise<MovieDetails> => {
     const response = await fetch(`${TMDB_CONFIG.BASE_URL}/movie/${id}`, {
         method: 'GET',
         headers: TMDB_CONFIG.headers
