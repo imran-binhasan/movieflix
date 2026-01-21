@@ -9,8 +9,7 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.imrancoredevs.movieflix"
+      "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
@@ -18,8 +17,7 @@
         "foregroundImage": "./assets/images/logo.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false,
-      "package": "com.imrancoredevs.movieflix"
+      "predictiveBackGestureEnabled": false
     },
     "web": {
       "bundler": "metro",
